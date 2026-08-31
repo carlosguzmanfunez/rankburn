@@ -150,9 +150,10 @@ async function applySettlement(
  * row for a zero-value update.
  */
 function dueForSettlement(now: Date) {
-  return sql`extract(epoch from (${now}::timestamptz - ${campaigns.lastSettledAt})) * ${campaigns.burnRateCentsPerHour} >= 3600`
-}
+  const nowIso = now.toISOString()
 
+  return sql`extract(epoch from (${nowIso}::timestamptz - ${campaigns.lastSettledAt})) * ${campaigns.burnRateCentsPerHour} >= 3600`
+}
 /** Brings a single campaign up to date. Idempotent for a given `now`. */
 export async function settleCampaign(
   campaignId: string,

@@ -570,7 +570,7 @@ function ReviewStep({
             value={`#${projection.overallRank} overall · #${projection.catRank} in ${categoryLabel(projection.category)}`}
           />
           <Row label="Estimated exposure time" value={projection.runway} />
-          <Row label="Service" value="RankBurn Digital Advertising" />
+          <Row label="Service" value="FlipPeak Digital Advertising" />
           <Row
             label="Billing description"
             value="Digital Advertising Placement and Exposure"

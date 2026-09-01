@@ -97,10 +97,10 @@ export async function POST(request: NextRequest) {
         ownerId: DEMO_ADVERTISER_ID,
         slug,
         name,
-        tagline: input.tagline?.trim().slice(0, 120) || `${name} on RankBurn.`,
+        tagline: input.tagline?.trim().slice(0, 120) || `${name} on FlipPeak.`,
         description:
           input.description?.trim().slice(0, 600) ||
-          `${name} is competing for advertising placement on RankBurn.`,
+          `${name} is competing for advertising placement on FlipPeak.`,
         category: input.category as CategoryId,
         website: input.website?.trim().slice(0, 120) || `${slug}.com`,
         hue:

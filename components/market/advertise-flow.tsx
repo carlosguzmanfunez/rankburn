@@ -508,7 +508,7 @@ function CheckoutDisclosure() {
         What you are buying
       </h3>
       <p className="mt-1.5 text-sm text-muted-foreground">
-        Digital advertising placement and exposure on RankBurn.
+        Digital advertising placement and exposure on FlipPeak.
       </p>
       <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
         {points.map((point) => (

@@ -9,11 +9,11 @@
  * identical in the UI, in the provider's records and on the buyer's
  * statement:
  *
- *     RankBurn Digital Advertising
+ *     FlipPeak Digital Advertising
  *     Digital Advertising Placement and Exposure
  */
 
-export const SERVICE_NAME = 'RankBurn Digital Advertising'
+export const SERVICE_NAME = 'FlipPeak Digital Advertising'
 export const SERVICE_DESCRIPTION = 'Digital Advertising Placement and Exposure'
 
 export type CheckoutRequest = {

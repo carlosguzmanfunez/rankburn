@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'RankBurn — The internet\u2019s live attention market',
+  title: 'FlipPeak — The internet\u2019s live attention market',
   description:
     'A live advertising platform where products compete for visibility with active advertising budget and transparent ranking rules.',
   generator: 'v0.app',

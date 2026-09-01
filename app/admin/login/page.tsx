@@ -39,12 +39,8 @@ export default async function AdminLoginPage() {
           <div className="mt-8 rounded-xl border border-destructive/30 bg-destructive/10 p-5 text-sm text-destructive">
             <p className="font-medium">Administrator sign in is disabled.</p>
             <p className="mt-2 leading-relaxed">
-              This deployment is missing{' '}
-              <span className="font-mono text-xs">RANKBURN_SESSION_SECRET</span>,{' '}
-              <span className="font-mono text-xs">RANKBURN_ADMIN_EMAILS</span> or{' '}
-              <span className="font-mono text-xs">RANKBURN_ADMIN_PASSWORD</span>.
-              Until they are set, moderation stays closed rather than open.
-            </p>
+  Administrator configuration is incomplete for this deployment. Until it is completed, moderation stays closed rather than open.
+</p>
           </div>
         )}
       </main>

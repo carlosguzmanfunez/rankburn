@@ -56,7 +56,7 @@ export default function HowItWorksPage() {
             Attention, priced in real time
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-pretty text-muted-foreground sm:text-lg">
-            RankBurn turns advertising visibility into a live market. Placement
+            FlipPeak turns advertising visibility into a live market. Placement
             follows active advertising budget through clear, published rules.
           </p>
         </section>

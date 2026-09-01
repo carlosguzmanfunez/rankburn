@@ -23,7 +23,7 @@ export function SiteHeader() {
     <header className="sticky top-0 z-40 border-b border-border/70 bg-background/80 backdrop-blur-xl">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-4 sm:px-6">
         <div className="flex items-center gap-8">
-          <Link href="/" aria-label="RankBurn home">
+          <Link href="/" aria-label="FlipPeak home">
             <Logo />
           </Link>
           <nav className="hidden items-center gap-1 md:flex">

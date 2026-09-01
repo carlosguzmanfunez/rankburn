@@ -39,7 +39,7 @@ export function Logo({
     <span className={cn('inline-flex items-center gap-2', className)}>
       <LogoMark className={markClassName} />
       <span className="text-[17px] font-semibold tracking-tight text-foreground">
-        Rank<span className="text-primary">Burn</span>
+        Flip<span className="text-primary">Peak</span>
       </span>
     </span>
   )

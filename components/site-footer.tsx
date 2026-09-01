@@ -29,7 +29,7 @@ export function SiteFooter() {
       </div>
       <div className="border-t border-border/70">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 text-xs text-muted-foreground sm:px-6">
-          <span>RankBurn — live advertising platform</span>
+          <span>FlipPeak — live advertising platform</span>
           <span className="tabular">© {new Date().getFullYear()}</span>
         </div>
       </div>

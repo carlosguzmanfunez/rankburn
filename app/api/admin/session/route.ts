@@ -11,11 +11,12 @@ export const dynamic = 'force-dynamic'
 export async function POST(request: NextRequest) {
   if (!adminAuthConfigured()) {
     return NextResponse.json(
-      {
-        error:
-          'Administrator sign-in is not configured on this deployment. Set RANKBURN_SESSION_SECRET, RANKBURN_ADMIN_EMAILS and RANKBURN_ADMIN_PASSWORD.',
-      },
-      { status: 503 },
+  {
+    error:
+      'Administrator sign-in is not configured on this deployment.',
+  },
+  { status: 503 },
+)
     )
   }
 

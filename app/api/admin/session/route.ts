@@ -16,8 +16,7 @@ export async function POST(request: NextRequest) {
       'Administrator sign-in is not configured on this deployment.',
   },
   { status: 503 },
-)
-    )
+)    
   }
 
   let body: unknown

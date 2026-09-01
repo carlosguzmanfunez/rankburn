@@ -6,7 +6,7 @@ import { AdminPanel } from '@/components/market/admin-panel'
 import { requireAdminSession } from '@/lib/server/auth'
 
 export const metadata: Metadata = {
-  title: 'Admin · RankBurn',
+  title: 'Admin · FlipPeak',
   description:
     'Review pending campaigns, moderate live advertising, and monitor platform health.',
   robots: {
@@ -40,7 +40,7 @@ export default async function AdminPage() {
           </h1>
           <p className="mt-4 max-w-2xl text-pretty text-lg leading-relaxed text-muted-foreground">
             Review campaign submissions, pause or flag live placements, and
-            monitor advertising activity across RankBurn.
+            monitor advertising activity across FlipPeak.
           </p>
           <p className="mt-3 font-mono text-xs uppercase tracking-[0.18em] text-muted-foreground">
             Signed in as {session.email}

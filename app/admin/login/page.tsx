@@ -7,7 +7,7 @@ import { requireAdminSession } from '@/lib/server/auth'
 import { adminAuthConfigured } from '@/lib/server/config'
 
 export const metadata: Metadata = {
-  title: 'Admin sign in · RankBurn',
+  title: 'Admin sign in · FlipPeak',
   robots: { index: false, follow: false },
 }
 

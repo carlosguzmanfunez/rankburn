@@ -3,8 +3,8 @@ import { SiteFooter } from '@/components/site-footer'
 import { SiteHeader } from '@/components/site-header'
 
 export const metadata = {
-  title: 'Categories — RankBurn',
-  description: 'Every live advertising category on RankBurn, and who is leading each one right now.',
+  title: 'Categories — FlipPeak',
+  description: 'Every live advertising category on FlipPeak, and who is leading each one right now.',
 }
 
 export default function CategoriesPage() {

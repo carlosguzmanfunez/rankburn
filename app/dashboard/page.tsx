@@ -7,7 +7,7 @@ import { buttonVariants } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
 
 export const metadata: Metadata = {
-  title: 'Dashboard · RankBurn',
+  title: 'Dashboard · FlipPeak',
   description:
     'Track your live rank, advertising budget burn, and competitive position in real time.',
 }

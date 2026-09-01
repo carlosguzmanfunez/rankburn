@@ -7,7 +7,7 @@ import { getPaymentById } from '@/lib/server/store'
 import { cn } from '@/lib/utils'
 
 export const metadata: Metadata = {
-  title: 'Payment status · RankBurn',
+  title: 'Payment status · FlipPeak',
   robots: { index: false, follow: false },
 }
 

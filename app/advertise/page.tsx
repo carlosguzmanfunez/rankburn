@@ -4,7 +4,7 @@ import { SiteFooter } from '@/components/site-footer'
 import { AdvertiseFlow } from '@/components/market/advertise-flow'
 
 export const metadata: Metadata = {
-  title: 'Advertise · RankBurn',
+  title: 'Advertise · FlipPeak',
   description:
     'Put your product on the board with a transparent advertising budget and dynamic placement.',
 }

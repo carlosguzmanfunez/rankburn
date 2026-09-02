@@ -4,6 +4,7 @@ import { SiteHeader } from '@/components/site-header'
 import { SiteFooter } from '@/components/site-footer'
 import { buttonVariants } from '@/components/ui/button'
 import { getPaymentById } from '@/lib/server/store'
+import { capturePendingPayment } from '@/lib/server/payments'
 import { cn } from '@/lib/utils'
 
 export const metadata: Metadata = {
@@ -28,8 +29,12 @@ export default async function PaymentReturnPage({
   searchParams: Promise<{ payment?: string }>
 }) {
   const { payment: paymentId } = await searchParams
-  const payment = paymentId ? await getPaymentById(paymentId) : null
+  let payment = paymentId ? await getPaymentById(paymentId) : null
 
+if (paymentId && payment?.status === 'PENDING') {
+  await capturePendingPayment(paymentId)
+  payment = await getPaymentById(paymentId)
+}
   const credited = Boolean(payment?.creditedAt)
   const title = !payment
     ? 'Payment not found'

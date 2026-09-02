@@ -159,7 +159,49 @@ export async function createCheckout(input: {
     }
   }
 }
+export async function capturePendingPayment(paymentId: string): Promise<{
+  ok: boolean
+  error?: string
+}> {
+  const payment = await getPaymentById(paymentId)
 
+  if (!payment) {
+    return { ok: false, error: 'Payment not found' }
+  }
+
+  if (payment.status === 'COMPLETED' || payment.creditedAt) {
+    return { ok: true }
+  }
+
+  if (payment.status !== 'PENDING') {
+    return { ok: false, error: 'Payment is ${payment.status}' }
+  }
+
+  if (!payment.providerOrderId) {
+    return { ok: false, error: 'Payment has no provider order id' }
+  }
+
+  const provider = getPaymentProvider()
+
+  if (!provider) {
+    return { ok: false, error: 'Payment provider is not configured' }
+  }
+
+  try {
+    const capture = await provider.capturePayment(payment.providerOrderId)
+
+    if (!capture.completed) {
+      return { ok: false, error: 'Provider did not confirm the capture' }
+    }
+
+    return { ok: true }
+  } catch (error) {
+    return {
+      ok: false,
+      error: error instanceof Error ? error.message : 'Payment capture failed',
+    }
+  }
+}
 /**
  * Applies a verified webhook. Safe to call repeatedly with the same event.
  */

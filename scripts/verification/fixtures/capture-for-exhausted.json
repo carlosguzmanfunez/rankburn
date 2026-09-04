@@ -1,0 +1,22 @@
+{
+  "id": "WH-CAPTURE-FOR-EXHAUSTED",
+  "event_version": "1.0",
+  "create_time": "2026-01-01T00:00:00.000Z",
+  "resource_type": "capture",
+  "event_type": "PAYMENT.CAPTURE.COMPLETED",
+  "summary": "Payment completed",
+  "resource": {
+    "id": "REPLACE_WITH_CAPTURE_ID",
+    "status": "COMPLETED",
+    "amount": {
+      "currency_code": "USD",
+      "value": "100.00"
+    },
+    "custom_id": "REPLACE_WITH_PAYMENT_ID",
+    "supplementary_data": {
+      "related_ids": {
+        "order_id": "REPLACE_WITH_ORDER_ID"
+      }
+    }
+  }
+}
